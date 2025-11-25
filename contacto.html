@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movistar | Información Corporativa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f6f9;
+      color: #111;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003366, #0078c8);
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 400;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #cce7ff;
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      background: url('https://i.imgur.com/WoEjjD5.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 56, 99, 0.6);
+    }
+
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 22px;
+      font-weight: 300;
+    }
+
+    section {
+      padding: 70px 50px;
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #003366;
+      font-weight: 700;
+    }
+
+    section p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    footer {
+      margin-top: 60px;
+      background: #003366;
+      color: #ccc;
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 14px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      section {
+        padding: 40px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MOVISTAR</div>
+    <nav>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#historia">Historia</a>
+      <a href="#mision">Misión</a>
+      <a href="#valores">Valores</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Conectamos tu mundo</h1>
+    <p>Movistar, líder en telecomunicaciones e innovación digital.</p>
+  </section>
+
+  <section id="nosotros">
+    <h2>¿Quiénes Somos?</h2>
+    <p>Movistar es una marca comercial de Telefónica, una de las mayores compañías de telecomunicaciones del mundo. Ofrecemos servicios de telefonía móvil, fija, internet y televisión, comprometidos con brindar una experiencia digital de calidad a millones de usuarios en América Latina y Europa.</p>
+    <p>Nuestro propósito es hacer un mundo más humano conectando la vida de las personas.</p>
+  </section>
+
+  <section id="historia">
+    <h2>Nuestra Historia</h2>
+    <p>Desde 1995, Movistar ha sido un referente en innovación y desarrollo tecnológico. A través de los años, evolucionamos hacia una empresa digital que integra tecnologías avanzadas para ofrecer soluciones de telecomunicaciones modernas y eficientes.</p>
+  </section>
+
+  <section id="mision">
+    <h2>Misión y Visión</h2>
+    <p><strong>Misión:</strong> Proporcionar servicios de telecomunicaciones y soluciones digitales que mejoren la vida de las personas y contribuyan al desarrollo de las sociedades.</p>
+    <p><strong>Visión:</strong> Ser líderes en innovación digital, sostenibilidad y experiencia del cliente, conectando hogares, empresas y comunidades.</p>
+  </section>
+
+  <section id="valores">
+    <h2>Valores Corporativos</h2>
+    <p><strong>Integridad:</strong> Actuamos con ética, transparencia y responsabilidad.</p>
+    <p><strong>Compromiso:</strong> Con nuestros clientes, colaboradores y comunidades.</p>
+    <p><strong>Innovación:</strong> Transformamos tecnologías en soluciones de valor.</p>
+    <p><strong>Sostenibilidad:</strong> Priorizamos el desarrollo responsable y el cuidado del planeta.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Información de Contacto</h2>
+    <p><strong>Oficinas Centrales:</strong> Telefónica, S.A. - Madrid, España</p>
+    <p><strong>Atención al Cliente:</strong> 1004 (desde una línea Movistar)</p>
+    <p><strong>Sitio Web Oficial:</strong> <a href="https://www.movistar.com" target="_blank">www.movistar.com</a></p>
+  </section>
+
+  <footer>
+    © 2025 Movistar - Telefónica. Todos los derechos reservados.
+    </footer>
+
+  <section id="contacto-form" style="padding:70px 50px; max-width:900px; margin:auto; background:#ffffff; margin-top:40px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+    <h2 style="font-size:32px; margin-bottom:20px; color:#003366; font-weight:700; text-align:center;">Contáctanos</h2>
+    <p style="font-size:18px; margin-bottom:30px; text-align:center;">Envíanos un mensaje y nuestro equipo se comunicará contigo lo antes posible.</p>
+
+    <form style="display:flex; flex-direction:column; gap:20px;">
+      <div>
+        <label>Nombre Completo</label>
+        <input type="text" placeholder="Ingresa tu nombre" style="width:100%; padding:12px; border:1px solid #ccc; border-radius:6px; font-size:16px;">
+      </div>
+
+      <div>
+        <label>Correo Electrónico</label>
+        <input type="email" placeholder="Ingresa tu correo" style="width:100%; padding:12px; border:1px solid #ccc; border-radius:6px; font-size:16px;">
+      </div>
+
+      <div>
+        <label>Mensaje</label>
+        <textarea rows="5" placeholder="Escribe tu mensaje" style="width:100%; padding:12px; border:1px solid #ccc; border-radius:6px; font-size:16px;"></textarea>
+      </div>
+
+      <button style="background:#0078c8; color:white; padding:15px; border:none; border-radius:6px; font-size:18px; cursor:pointer; transition:0.3s;">Enviar Mensaje</button>
+    </form>
+  </section>
+
+</body>
+</html>
